@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+}
+
+:root {
+    --nav-txt-color: rgb(0, 255, 85);
+    --menu-color: rgb(85, 83, 83);
+    --c-color: rgb(0, 247, 255);
+    --e-color: rgb(0, 255, 85);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--menu-color);
+    color: var(--nav-txt-color);
+}
+
+#logo-anchor {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header-nav li {
+    margin: 0 15px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #ffc107;
+}
+
+.hero-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-banner.jpg') center/cover no-repeat;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    height: 300px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #333;
+    color: #ffc107;
+}
+
+.category-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.category-list li {
+    margin: 0 15px;
+}
+
+.category-list img {
+    height: 50px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.category-list a:hover {
+    color: #ffc107;
+}
+
+.auction-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.auction-item:hover img {
+    transform: scale(1.1);
+}
+
+.featured-auctions {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-auctions h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.auction-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.auction-item {
+    max-width: 300px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.auction-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.auction-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.auction-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.auction-item span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.auction-item a {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.auction-item a:hover {
+    background-color: #333;
+    color: #ffc107;
+}
+
+.category-section {
+    margin: 40px 0;
+}
+
+.category-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.category-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    max-width: 300px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Add this CSS to your existing styles */
+
+.category-list li {
+    text-align: center;
+    /* Center the content */
+    margin: 0 15px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    /* Arrange children in a column */
+    align-items: center;
+    /* Center children horizontally */
+    transition: color 0.3s ease;
+}
+
+.category-list a:hover {
+    color: #ffc107;
+}
+
+.category-list img {
+    height: 50px;
+    /* Adjust the height as needed */
+    margin-bottom: 10px;
+    /* Add space between image and text */
+}
+
+.category-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.category-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.category-item span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.category-item a {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.category-item a:hover {
+    background-color: #333;
+    color: #ffc107;
+}
+
+/* ... Other styles ... */
+
+/* ... Other styles ... */
+
+.categories h2,
+.category-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    /* Adjust padding as needed */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-banner.jpg') center/cover no-repeat;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    height: 300px;
+    /* Adjust the height for larger screens */
+    max-width: 100%;
+    /* Make the image responsive by setting max-width to 100% */
+    width: 100%;
+    /* Ensure the image takes up the full width */
+    border-radius: 30px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .header-nav li {
+        margin-right: 10px;
+    }
+
+    .hero-banner {
+        padding: 30px;
+    }
+
+    .hero-image {
+        height: 150px;
+    }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .logo {
+        width: 60px;
+    }
+}
+
+/* Desktop styles (default) */
+@media screen and (min-width: 1025px) {
+    .logo {
+        width: 70px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+    /* Footer shadow */
+}
+
+.footer-info {
+    margin-top: 40px;
+}
+
+.footer-info p {
+    font-size: 1rem;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffc107;
+}
+
+.developer-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.developer-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.developer-card {
+    max-width: 300px;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.developer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.developer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.developer-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.developer-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+}
+
+.social-media-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Add this CSS to your existing styles */
+
+.testimonials-footer {
+    margin: 40px 0;
+}
+
+.testimonial-slider-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-footer {
+    max-width: 400px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.testimonial-footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-footer span {
+    font-weight: bold;
+}
+
+/* Adjust styles as needed */
